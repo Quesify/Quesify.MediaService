@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34407.89
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F86A7400-3E74-4B7B-9B38-9FB0F11A48DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quesify.MediaService.API", "src\Quesify.MediaService.API\Quesify.MediaService.API.csproj", "{B32FE717-227E-470D-B05A-33F47BC1048E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B32FE717-227E-470D-B05A-33F47BC1048E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B32FE717-227E-470D-B05A-33F47BC1048E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B32FE717-227E-470D-B05A-33F47BC1048E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B32FE717-227E-470D-B05A-33F47BC1048E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B32FE717-227E-470D-B05A-33F47BC1048E} = {F86A7400-3E74-4B7B-9B38-9FB0F11A48DD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6E6138A5-7F3B-448A-AA9A-0BEA27083317}
+	EndGlobalSection
+EndGlobal
