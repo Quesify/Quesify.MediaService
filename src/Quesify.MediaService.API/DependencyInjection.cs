@@ -19,7 +19,7 @@ public static class DependencyInjection
 
         services.AddSwaggerGen(o =>
         {
-            o.SwaggerDoc("v1", new OpenApiInfo { Title = "Quesify.MediaService.Web", Version = "v1" });
+            o.SwaggerDoc("v1", new OpenApiInfo { Title = "Quesify.MediaService.API", Version = "v1" });
             o.DocumentFilter<LowercaseDocumentFilter>();
         });
 
