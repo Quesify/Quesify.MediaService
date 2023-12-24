@@ -54,6 +54,8 @@ public static class DependencyInjection
             options.IgnoreResponseBody = true;
         });
 
+        services.AddCustomExceptionHandler();
+
         return services;
     }
 }
