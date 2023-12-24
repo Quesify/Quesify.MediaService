@@ -29,7 +29,6 @@ public class AttachmentsController : ControllerBase
         return Created("", new UploadFileResponse()
         {
             Path = $"attachments/{result.Name}",
-            FileName = result.Name,
             Size = file.Length
         });
     }
