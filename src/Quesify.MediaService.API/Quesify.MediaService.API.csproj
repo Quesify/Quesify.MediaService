@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Quesify.SharedKernel.AspNetCore.Logging" Version="1.0.2" />
+    <PackageReference Include="Quesify.SharedKernel.AspNetCore.Logging" Version="1.0.3" />
     <PackageReference Include="Quesify.SharedKernel.AspNetCore.Swagger" Version="1.0.2" />
     <PackageReference Include="Quesify.SharedKernel.Storage.Local" Version="1.0.2" />
     <PackageReference Include="Serilog.AspNetCore" Version="8.0.0" />
