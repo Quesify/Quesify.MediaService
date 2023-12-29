@@ -1,4 +1,5 @@
-﻿using Microsoft.OpenApi.Models;
+﻿using Microsoft.Extensions.Configuration;
+using Microsoft.OpenApi.Models;
 using Quesify.SharedKernel.AspNetCore.Logging.Models;
 using Quesify.SharedKernel.AspNetCore.Swagger.Filters;
 using Quesify.SharedKernel.Guids;
@@ -6,6 +7,7 @@ using Quesify.SharedKernel.Storage;
 using Quesify.SharedKernel.TimeProviders;
 using Serilog;
 using Serilog.Events;
+using Steeltoe.Discovery.Client;
 
 namespace Microsoft.Extensions.DependencyInjection;
 
@@ -13,6 +15,7 @@ public static class DependencyInjection
 {
     public static IServiceCollection AddWebServices(
         this IServiceCollection services,
+        IConfiguration configuration,
         ConfigureHostBuilder hostBuilder)
     {
         services.AddControllers();
@@ -55,6 +58,8 @@ public static class DependencyInjection
         });
 
         services.AddCustomExceptionHandler();
+
+        services.AddDiscoveryClient(configuration);
 
         return services;
     }

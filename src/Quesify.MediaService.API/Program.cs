@@ -1,6 +1,6 @@
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddWebServices(builder.Host);
+builder.Services.AddWebServices(builder.Configuration, builder.Host);
 
 var app = builder.Build();
 
@@ -26,7 +26,10 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.UseStaticFiles();
+app.UseStaticFiles(new StaticFileOptions()
+{
+    RequestPath = "/api/v1",
+});
 
 app.UseExceptionHandler(o => { });
 
